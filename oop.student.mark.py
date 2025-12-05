@@ -75,6 +75,7 @@ def input_mark():
                 sid = student.get_id()
                 marks[(sid,cid)] = float(input(f"Enter mark of {student.get_name()} :"))
 def show_mark():
+    print("----Show Mark--------")
     cid = input("Enter course ID to show marks: ")
     for s in students:
         sid = s.get_id()
@@ -84,9 +85,32 @@ def show_mark():
         else:
             print(f"{s.get_name()}: no mark")
 
-input_number_student()    
-input_nb_course()
-input_mark()
+# input_number_student()    
+# input_nb_course()
+# input_mark()
 
-list_students()
-list_course()
+# list_students()
+# list_course()
+def main():
+    while True:
+        print("List action: \n")
+        print("1.Input number students\n2.Input number of course\n3.Input mark \n4.Show full course\n5.Show list student\n6.Show mark\n0.Exit")
+        
+        choice = int(input("Enter the number of your choice: "))
+        if choice == 1:
+            input_number_student()
+        if choice == 2:
+            input_nb_course()
+        if choice == 3:
+            input_mark()
+        if choice == 4:
+            list_course()
+        if choice == 5:
+            list_students()
+        if choice == 6:
+            show_mark()
+        if choice == 0:
+            break
+
+main()
+

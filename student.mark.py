@@ -55,6 +55,7 @@ def list_students():
         print(f"ID: {s["id"]} || Name: {s["name"]} || DoB: {s["Dob"]}")
 
 def show_mark():
+    print("----Show Mark--------")
     cid = input("Enter course ID to show marks: ")
     for s in students:
         sid = s["id"]
@@ -78,19 +79,19 @@ def main():
         print("List action: \n")
         print("1.Input number students\n2.Input number of course\n3.Input mark \n4.Show full course\n5.Show list student\n6.Show mark")
         
-        choice = input("Enter the number of your choice: ")
+        choice = int(input("Enter the number of your choice: "))
         if choice == 1:
-            input_number_student
+            input_number_student()
         if choice == 2:
-            input_nb_course
+            input_nb_course()
         if choice == 3:
-            input_mark
+            input_mark()
         if choice == 4:
-            list_course
+            list_course()
         if choice == 5:
-            list_students
+            list_students()
         if choice == 6:
-            show_mark
+            show_mark()
         if choice == 0:
             break
 
