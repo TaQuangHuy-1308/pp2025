@@ -1,20 +1,7 @@
-# n = int(input())
-
-# id = int(input())
-
-# name = str(input())
-
-# Dob = str(input())
-
-# nb_course = int(input())
-
-# id_course = str(input())
-
-# name_course = str(input())
 
 students = []  # list
 courses = []   # list
-marks = {} 
+marks = {}  
 
 def input_number_student():
     print("Enter the nb of student: ")
